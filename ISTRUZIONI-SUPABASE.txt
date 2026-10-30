@@ -1,0 +1,10 @@
+MWS Landing - attivazione modulo Supabase
+
+1. La tabella public.mws_leads deve esistere e avere RLS attiva, senza policy SELECT pubbliche.
+2. Nel progetto ndgdgimymliiumkocicn vai in Edge Functions, crea funzione "submit-lead" e incolla il codice di supabase/functions/submit-lead/index.ts. Distribuisci la funzione.
+3. Imposta la funzione come PUBBLICA (Verify JWT = OFF): il modulo non ha login.
+4. Le variabili SUPABASE_URL e SUPABASE_SERVICE_ROLE_KEY sono normalmente fornite automaticamente alle Edge Functions Supabase. NON inserirle mai nel sito.
+5. Pubblica tutti i file del sito aggiornato su Vercel, sostituendo la vecchia landing. Il file config.js contiene gia l'endpoint del progetto.
+6. Esegui un test e verifica il record in Table Editor > mws_leads.
+7. Prima delle campagne: completare privacy.html con dati veri e consulenza GDPR, aggiungere Turnstile/captcha e rate limiting server-side per mitigare spam/abusi. Il solo honeypot NON basta.
+NOTA: Questa ZIP e predisposta, NON e stata ancora distribuita o testata in Supabase/Vercel.

@@ -1,0 +1,8 @@
+MODERN WEB SOLUTIONS - LANDING PAGE
+
+1. Estrai il file ZIP.
+2. Apri index.html nel browser per vedere la landing.
+3. Carica index.html e privacy.html nella cartella del tuo hosting.
+4. La grafica e' inclusa direttamente in index.html.
+5. Il modulo lead NON e' ancora collegato a Supabase: collegarlo prima di avviare campagne.
+6. Completa e verifica l'informativa privacy prima della pubblicazione.
